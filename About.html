@@ -5,14 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    
+    <!-- Bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css" integrity="sha512-XWTTruHZEYJsxV3W/lSXG1n3Q39YIWOstqvmFsdNEEQfHoZ6vm6E9GK2OrF6DSJSpIbRbi+Nn0WDPID9O7xB2Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- main style  -->
     <link rel="stylesheet" href="css/about.css">
-    <!-- bootstrap file -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav class="bg-light">
-        <div class="logo">
-            <h2>Mohammed Ebrahiim Porfolio</h2>
+        <div class="logo mx-3">
+            <a href="#" class="fst-italic fs-1 text-decoration-none">MyPortfolio</a>
+            <p class="text-muted" style="font-size: 10px;">Developed by Mohammed Ebrahiim</p>
         </div>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -20,60 +27,97 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <article class="container">
+    <article class="container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
         <h1>About Mohammed</h1>
-        <div class="image">
-            <img src="imgs/DSC_0029.JPG" alt="">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6 image mb-5" data-aos="zoom-in">
+                <img src="imgs/WhatsApp Image 2022-06-22 at 12.20.06 AM.jpeg" alt="">
+            </div>
+            <div class="col-sm-12 col-lg-6 about-me">
+                <h1 class="text-primary" style="text-align: left;">Hi Guys!</h1>
+                <p>
+                    Front-End Developer with +1 years experience using: HTML, CSS, SASS, Bootstrap, JavaScript, and React js. Also, I hope to be given the opportunity as a UI Developer or Front-End Developer. I have followed the growth of Digital Verse, and I am confident my skills can help you achieve your goal. To get first-hand experience on what I can do and what I have done as a Front-End Developer.
+                </p>
+                <address ><i class="fa-solid fa-caret-right text-primary"> </i><span class="fw-bold text-primary"> &nbsp; Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> :  &nbsp; Mohammed Ebrahiim</address>
+                <address><i class="fa-solid fa-caret-right text-primary"> </i><span class="fw-bold text-primary"> &nbsp; E-Mail &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> :  &nbsp; <a href="mailto:mohammedebrahiim97@gmail.com">mohammedebrahiim97@gmail.com</a></address>
+                <address><i class="fa-solid fa-caret-right text-primary"> </i><span class="fw-bold text-primary"> &nbsp; Phone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> :  &nbsp; <a href="tel:+201094968733">+201094968733</a></address>
+                <address><i class="fa-solid fa-caret-right text-primary"> </i><span class="fw-bold text-primary"> &nbsp; Address &nbsp;&nbsp;&nbsp;</span> :  &nbsp; Mansoura, Egypt</address>
+                <address><i class="fa-solid fa-caret-right text-primary"> </i><span class="fw-bold text-primary"> &nbsp; Freelance &nbsp;</span> :  &nbsp; Available</address>
+                
+                <button class="btn btn-success mt-4"><a href="https://drive.google.com/file/d/1qid2wDOanvEyhRE6fcQyswOd-7Y7kylm/view?usp=sharing" class="text-white text-decoration-none">DOWNLOAD RESUME</a></button>
+            </div>
         </div>
     </article>
 
     <section class="education container">
         <div class="parent-of-content">
             <div class="content">
-                <h1>education</h1>
-                <p>Graduated with a Bachelor's degree in Software Engineering in 2020 with a grade of "Good" (74.8), and a "Graduation Project" grade of "Excellent".</p>
+                <h1><i class="fa-solid fa-graduation-cap"></i> education</h1>
+                
+                <div class="bg-light p-3 m-md-5 my-2" style="border-radius: 5px;" data-aos="fade-left">
+                    <h3>Certificate in Web Development using Node.JS and Angular +2</h3>
+                    <blockquote style="font-size: 12px;">Feb 2022 - March 2022</blockquote>
+                    <p class="text-muted">Certificate in Web Development using Node JS and Angular at The National Telecommunication Institute (NTI), NTI provides Digital Egypt Youth (DEY) training program.</p>
+                    <a href="https://drive.google.com/file/d/1zeS6iPS6MOg-2wmulirUvvuV-vhGYx8i/view?usp=sharing" target="_blank">View Certificate <i class="fa-solid fa-certificate"></i></a>
+                </div>
+                <div class="bg-light p-3 m-md-5 my-2" style="border-radius: 5px;" data-aos="fade-right">
+                    <h3>Certificate in Web Design </h3>
+                    <blockquote style="font-size: 12px;">Nov 2021 - Des 2021</blockquote>
+                    <p class="text-muted">Certificate in Web Design at The National Telecommunication Institute (NTI), NTI provides Digital Egypt Youth (DEY) training program. </p>
+                    <a href="https://drive.google.com/file/d/1YOWPxGJtRGoo-RJZB-JowAeLJmlEsvWY/view?usp=sharing" target="_blank">View Certificate <i class="fa-solid fa-certificate"></i></a>
+                </div>
+                <div class="bg-light p-3  m-md-5" style="border-radius: 5px;" data-aos="fade-left">
+                    <h3>B.S. in Software Engineering</h3>
+                    <blockquote style="font-size: 12px;">2016 - 2020</blockquote>
+                    <p class="text-muted">Graduated with a Bachelor's degree in Software Engineering in 2020 with a grade of "Good" (74.8), and a "Graduation Project" grade of "Excellent".</p>
+                    <a href="https://drive.google.com/file/d/1f6DAE-J6Gessk9u_jpzlgKqmS4lwVVdY/view?usp=sharing" target="_blank">View Certificate <i class="fa-solid fa-certificate"></i></a>
+                </div>  
+                
+                
+                
+                  
             </div>
-            <div class="content">
-                <h1>Hobbies</h1>
-                <p>I love sharing my experience and knowledge with others, I love reading,&nbsp; learning something new every single day.</p>
-            </div>
+           
         </div>
-        <div class="skills">
-            <h2>My Skills</h2>
+        <div class="skills px-1 px-md-2 " data-aos="flip-left">
+            <h2 class="ms-4">My Skills</h2>
             <ul>
                 <li>HTML / HTML5</li>
-                <div class="progress " style="height: 4px;">
-                    <div class="progress-bar HTML bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress " style="height: 5px; background-color: rgba(0, 0, 0, 0.275);">
+                    <div class="progress-bar HTML bg-light" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
 
                 <li>CSS3 / SASS</li>
-                <div class="progress " style="height: 4px;">
-                    <div class="progress-bar CSS3 bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress " style="height: 5px; background-color: rgba(0, 0, 0, 0.275);">
+                    <div class="progress-bar CSS3 bg-light" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 
                 <li>BootStrap5</li>
-                <div class="progress" style="height: 4px;">
-                    <div class="progress-bar BootStrap5 bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress " style="height: 5px; background-color: rgba(0, 0, 0, 0.275);">
+                    <div class="progress-bar BootStrap5 bg-light" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 
+                <li>Responsive Design</li>
+                <div class="progress" style="height: 5px; background-color: rgba(0, 0, 0, 0.275);">
+                    <div class="progress-bar Reactjs bg-light" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
                 <li>Javascript</li>
-                <div class="progress" style="height: 4px;">
-                    <div class="progress-bar Javascript bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress" style="height: 5px; background-color: rgba(0, 0, 0, 0.275);">
+                    <div class="progress-bar Javascript bg-light" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 
                 <li>Reactjs</li>
-                <div class="progress" style="height: 4px;">
-                    <div class="progress-bar Reactjs bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                
-                <li>MongoDB</li>
-                <div class="progress" style="height: 4px;">
-                    <div class="progress-bar MongoDB bg-danger role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress" style="height: 5px; background-color: rgba(0, 0, 0, 0.275);">
+                    <div class="progress-bar Reactjs bg-light" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 
             </ul>
         </div>
     </section>
+
+
+    
 
 
     <footer class="bg-light">
@@ -82,7 +126,8 @@
             <p>&copy;2022 - Mohammed Ebrahiim</p>
         </div>
     </footer>
-
-<script src="js/bootstrap.bundle.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
