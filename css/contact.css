@@ -27,7 +27,7 @@ nav .logo h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 100px; 
+    /* padding: 20px 100px;  */
     }
     nav .logo h2{
         color: #000;
@@ -70,34 +70,19 @@ nav ul li a{
 }
 /*End OF Nav************************************* */
 
-section .links ul{
-    /* margin-top: 50px; */
-    margin-left: auto;
-    list-style: none;
-    display: flex;
-    justify-content: center;
+
+
+section.Contact{
+    margin-top: 300px;
 }
 .links ul li a{
     margin: 0 10px;
     font-size: 33px;
     font-weight: bold;
     text-decoration: none;
+    border-radius: 50%;
     color: #8c8c8c;
 }
 .links ul li a:hover{
-    color: black;
-}
-
-
-
-/************************** footer ********************************/
-footer{
-    background-color: white;
-    padding: 10px; 
-    text-align: center;
-    width: 100%;
-    margin-top: 100px;
-}
-footer h3{
-    margin: 10px;
+    color: white;
 }

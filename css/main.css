@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+
+}
+
+body{
+    background-color: #e4e4e4a8;
+}
+.container{
+    width: 85%;
+    margin: 50px auto;
+}
+.header{
+    /* background-color: red; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: .5s all ease-in-out;
+    padding: 0;
+    margin-bottom: 250px !important;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 10px;
+    color: #fff;
+    transition: .5s all ease-in-out;
+
+}
+.NavActive{
+    background-color: rgba(0, 0, 0, .6);
+    /* background-color: teal; */
+    margin-bottom: 50px;
+}
+.header.NavActive a{
+    color: white;
+}
+.header.NavActive p{
+    color: white !important;
+}
+.header.NavActive .bars{
+    color: white;
+}
+.header .active .container{
+    height: 80px;
+}
+.header.NavActive ul{
+    border-radius: 0 0 0 10px;
+}
+.header ul{
+    display: flex;
+    justify-content: space-between;
+}
+.header ul li{
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+}
+.header ul li a{
+    text-decoration: none;
+    color: w;
+
+}
+.header ul li::after{
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    width: 0;
+    left: 0;
+    background-color: #fff;
+    height: 2px;
+    transition: .5s all ease-in-out;
+}
+.header ul li:hover::after,
+.header ul li.active::after{
+    width: 100%;
+}
+.header .bars{
+    display: none;
+}
+@media (max-width: 1024px) {
+    .header .bars{
+        display: block;
+        cursor: pointer;
+        color: #0099ff;
+        font-size: 22px;
+    }
+    .header ul{
+        position: fixed;
+        left:  100%;
+        top: 60px;
+        width: 120px;
+        /* height: 50%; */
+        margin: 50px auto;
+        background-color: rgba(255, 0, 0, 0.6);
+        background-color: teal;
+        flex-direction: column;
+        padding: 0;
+        text-align: left;
+        transform: translateX(-100%);
+        transition: .7s transform ease-in-out;
+        border-radius: 10px 0 0 10px;
+    }
+    .header ul.active{
+        transform: translateX(0);
+    }
+    .header li:not(:first-of-type),
+    .header li:not(:last-of-type){
+        margin: 15px 0;
+    }
+    .header ul li a{
+        color: white ;
+    }
+}
+.header li:not(:first-of-type),
+.header li:not(:last-of-type){
+    margin: 0 15px;
+}
+.header .logo{
+    font-family: 'thuluth-decorated';
+    font-size: 55px;
+    cursor: pointer;
+}
+
+/*End OF Nav */
+/*Start of article*/
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px !important;
+}
+article aside h1{
+    letter-spacing: -5px;
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+article aside p{
+    color: gray;
+    line-height: 1.5;
+    font-family:Arial, Helvetica, sans-serif;
+}
+article picture{
+    width: 100%;
+    margin: 10px auto;   
+    margin-top: 20px;
+    text-align: center;
+}
+article picture img{
+    width: 100%;
+    margin: 10px 0px;
+    border: 10px solid white;
+    box-shadow: -10px 20px 20px 0px #8c8c8c;
+    border-radius: 50%;
+}
+article picture .links{
+    width: 90%;
+    margin-right: 50px !important;
+}
+article picture .links ul{
+    margin-top: 50px;
+    /* margin-left: auto; */
+    /* margin-right: 50px; */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+article picture .links ul li a{
+    margin: 0 20px;
+    font-size: 33px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #8c8c8c;
+}
+article picture .links ul li a:hover{
+    color: black;
+}
+@media(min-width: 992px){
+    article{
+        flex-direction: row;
+        justify-content: center;
+    }
+    article aside h1{
+        font-size: 100px;
+        width: 60%;
+    }
+    article aside p{
+        font-size: 18px;
+        width: 90%;
+    }
+    article picture{
+        width: 50%;
+        margin-top: 20px;
+    }
+    article picture img{
+        width: calc(100% - 10px);
+    }
+    article picture .links{
+        width: 90%;
+    }
+    article picture .links ul{
+        margin-left: 80px;
+    }
+}
+
+/************************** footer ********************************/
+
+.about-me p.copyright{
+    color: white;
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    font-size: px;
+}
+footer svg{
+    height: 1%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
