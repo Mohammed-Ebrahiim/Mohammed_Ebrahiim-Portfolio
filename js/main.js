@@ -19,6 +19,15 @@ window.onscroll = function(){
     }
 }
 
+let linkTop = document.getElementById("topBtn")
+window.addEventListener('scroll' , function(){
+    (document.documentElement.scrollTop > 100) 
+    ? linkTop.style.display = "inline-block"
+    : linkTop.style.display = "none"
+
+})
+
+
 
 
 // Email Js from Curly Braces Channel:  "https://www.youtube.com/watch?v=kWEDY0rjS30"
