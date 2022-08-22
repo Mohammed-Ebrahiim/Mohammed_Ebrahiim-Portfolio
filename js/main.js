@@ -3,14 +3,7 @@ AOS.init();
 let fixedNav = document.getElementById("nav");
 window.addEventListener("scroll",()=>{
     window.scrollY > 50 ? fixedNav.classList.add('NavActive') : fixedNav.classList.remove('NavActive');
-})
-
-// Active sidebar
-let bars = document.querySelector('.bars'),
-    sidebar = document.querySelector('.header ul');
-
-bars.addEventListener('click',()=>{
-    sidebar.classList.toggle('active');
+    console.log("scrolling ")
 })
 
 
