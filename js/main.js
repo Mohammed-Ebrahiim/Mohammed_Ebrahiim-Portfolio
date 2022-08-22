@@ -39,7 +39,7 @@ window.onload = function() {
             from_name: `${document.getElementById('your_Name').value}`,
             from_email: document.querySelector('input[type="email"]').value,
             message: document.querySelector('textarea').value,
-            email_to: "mhmdhm509@gmail.com",
+            email_to: "mohammedebrahiim97@gmail.com",
             })
             .then(function(res){
                 alert("Thanks For Message Me! "+ res.status);
