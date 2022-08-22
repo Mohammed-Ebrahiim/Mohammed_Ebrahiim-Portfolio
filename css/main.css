@@ -2,8 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
- 
-
 }
 
 body{
@@ -13,8 +11,17 @@ body{
     width: 85%;
     margin: 50px auto;
 }
-.header{
-    /* background-color: red; */
+/* .NavActive{
+    background-color: rgba(28, 0, 244, 0.6) !important;
+    margin-bottom: 50px;
+}
+.NavActive a{
+    color: red;
+}
+.NavActive p{
+    color: red !important;
+} */
+/* .header{
     position: fixed;
     top: 0;
     left: 0;
@@ -35,7 +42,6 @@ body{
 }
 .NavActive{
     background-color: rgba(0, 0, 0, .6);
-    /* background-color: teal; */
     margin-bottom: 50px;
 }
 .header.NavActive a{
@@ -98,7 +104,6 @@ body{
         left:  100%;
         top: 60px;
         width: 120px;
-        /* height: 50%; */
         margin: 50px auto;
         background-color: rgba(255, 0, 0, 0.6);
         background-color: teal;
@@ -128,7 +133,7 @@ body{
     font-family: 'thuluth-decorated';
     font-size: 55px;
     cursor: pointer;
-}
+} */
 
 /*End OF Nav */
 /*Start of article*/
@@ -136,7 +141,7 @@ article{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px !important;
+    margin-top: 0px !important;
 }
 article aside h1{
     letter-spacing: -5px;
