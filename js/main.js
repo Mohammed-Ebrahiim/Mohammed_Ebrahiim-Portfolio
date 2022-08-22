@@ -29,30 +29,25 @@ window.addEventListener('scroll' , function(){
 
 
 
+// Email Js ................... From AG Coding
+window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
 
-// Email Js from Curly Braces Channel:  "https://www.youtube.com/watch?v=kWEDY0rjS30"
-
-function sendMsg(e){
-    e.preventDefault();
-    let email = document.querySelector('input[type="email"]'),
-        subject = document.querySelector('input[type="text"]'),
-        comment = document.querySelector('textarea'),
-        submitBtn = document.querySelector('button');
-
-    
-
-    Email.send({
-        Host : "F5AD8903FB9EFDBC20C22BF88503C77B244B",
-        Username : "username",
-        Password : "password",
-        To : 'mhmdhms509@gmail.com',
-        From : email.value,
-        Subject : subject.value,
-        Body : comment.value
-    }).then(
-      message => alert(message)
-    );
+        emailjs.send("service_izlxolh","template_72ff1jf",{
+            to_name: `Eng: Mohammed `,
+            from_name: `${document.getElementById('your_Name').value}`,
+            from_email: document.querySelector('input[type="email"]').value,
+            message: document.querySelector('textarea').value,
+            email_to: "mhmdhm509@gmail.com",
+            })
+            .then(function(res){
+                alert("Thanks For Message Me! "+ res.status);
+            }),function(error){
+                alert("Failed To Send" + error)
+            }
+        return false;
+    });
 }
-let form = document.forms[0];
-form.addEventListener('submit', sendMsg)
+
 
