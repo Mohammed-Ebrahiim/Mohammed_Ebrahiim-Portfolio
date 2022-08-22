@@ -19,6 +19,7 @@ window.onscroll = function(){
     }
 }
 
+
 let linkTop = document.getElementById("topBtn")
 window.addEventListener('scroll' , function(){
     (document.documentElement.scrollTop > 100) 
@@ -26,7 +27,6 @@ window.addEventListener('scroll' , function(){
     : linkTop.style.display = "none"
 
 })
-
 
 
 // Email Js ................... From AG Coding
