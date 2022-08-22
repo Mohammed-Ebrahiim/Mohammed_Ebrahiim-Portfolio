@@ -46,7 +46,9 @@ window.onload = function() {
             }),function(error){
                 alert("Failed To Send" + error)
             }
-        return false;
+            document.getElementById('your_Name').value = '';
+            document.querySelector('input[type="email"]').value = '';
+            document.querySelector('textarea').value = '';
     });
 }
 
