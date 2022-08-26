@@ -10,13 +10,13 @@ body{
     width: 85%;
     margin: 50px auto;
 }
-article h2{
+/* article h2{
     text-align: center;
     font-family: "Poppins",Helvetica,Arial,sans-serif;
-    /* font-size: 48px; */
+
     font-weight: 600;
     letter-spacing: -2px;
-}
+} */
 
 article .row h2::after
 {
@@ -58,7 +58,7 @@ article .image img{
     object-fit: fill;
     /* margin: 50px auto; */
     border-radius: 20px;
-    box-shadow: 0px 15px 20px 10px #8c8c8c;
+    box-shadow: 0px 3px 80px 1px #8c8c8c;
     transition: all .2s ease-in-out; 
     border: 10px solid white;
 
@@ -75,7 +75,10 @@ article .about-me ul li span{
 
 
 /****************************End of Article section***************************/
-
+section.what-I-Do .card:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
 
 .education{
     display: flex;
@@ -85,7 +88,6 @@ article .about-me ul li span{
 }
 .education .content{
     margin: 100px 0;
-
 }
 .education .content h1{
     text-transform: capitalize;
@@ -93,6 +95,11 @@ article .about-me ul li span{
     font-size: 30px;
     margin: 15px 0;
 }
+.education .content div:hover{
+    cursor: pointer;
+    box-shadow: inset 0px 0px 15px -7px rgba(0,0,0,0.75);
+}
+
 .education .content p{
     color: gray;
     line-height: 1.5;
@@ -168,45 +175,78 @@ section .row .icon{
     transform: translate(-50%, -50%);
 }
 
+section.homebg{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imgs/home.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 
 /* My Remarksable works */
 
-section .row h1{
-    color: tomato;
+.item {
+    position: relative;
+    border-radius: 5px;
+    /* width: 33% !important; */
+    height: 400px;
+    /* margin: 6px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+    transition: background-position 7s ease-in-out;
+    overflow-x: hidden;
+    background-color: #8c8c8c;
+    cursor: pointer;
+}
+.item1{
+    background-image: url(../imgs/Remarkable-works/islamic.png);
+}
+.item2{
+    background-image: url(../imgs/Remarkable-works/gts2.png);
+}
+.item3{
+    background-image: url(../imgs/Remarkable-works/tradex.png);
+}
+.item4{
+    background-image: url(../imgs/Remarkable-works/bondi.png);
+}
+.item5{
+    background-image: url(../imgs/Remarkable-works/Apartment.png);
+}
+.item6{
+    background-image: url(../imgs/Remarkable-works/kasper.png);
+}
+.item7{
+    background-image: url(../imgs/Remarkable-works/kudzoka.png);
+}
+.item8{
+    background-image: url(../imgs/Remarkable-works/faceclone.png);
+}
+.item9{
+    background-image: url(../imgs/Remarkable-works/todoapp.png);
+}
+.item:hover{
+    scroll-behavior: smooth;
+    background-position: bottom;
+}
+.item .link{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #3b3c43;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 1rem;
+}
+.item .link a:hover{
+    color: #fd0d0d !important;
 }
 
-.item {
-    /* background-color: rgba(255, 0, 0, 0.8); */
-    /* border: 1px solid rgba(0, 0, 0, 0.8); */
-    overflow: hidden !important;
-    border-radius: 5px;
-    position: relative;
-    /* width: 30% !important; */
-    /* margin: 20px; */
-   
-}
-.item img{
-    transition: all 0.9s ease 0s;
-    height: 300px;
-}
-.item:hover img{
-    transform: scale(1.7);
-}
-.item:hover .link,
-.item:hover .title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.link{
-    width: 100%;
-    height: 70px;
-    background: teal;
-    position: absolute;
-    left: 50%;
-    top: 93%;
-    transform: translate(-50%, -50%);
-    display: none;
-}
+
 
