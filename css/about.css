@@ -201,6 +201,12 @@ section.homebg{
     background-color: #8c8c8c;
     cursor: pointer;
 }
+.item01{
+    background-image: url(../imgs/Remarkable-works/jawatha.jpg);
+}
+.item02{
+    background-image: url(../imgs/Remarkable-works/majed.jpg);
+}
 .item1{
     background-image: url(../imgs/Remarkable-works/islamic.png);
 }
@@ -247,6 +253,5 @@ section.homebg{
 .item .link a:hover{
     color: #fd0d0d !important;
 }
-
 
 
